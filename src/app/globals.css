@@ -19,3 +19,37 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.fancy-shadow {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.info-shadow {
+  box-shadow: 0 0 30px rgba(60, 0, 78, 0.15)
+}
+
+.info-bg {
+  background: rgba(28, 0, 59, 0.1)
+}
+
+.logo-filter {
+  filter: drop-shadow(0 0 15px #ff0000) drop-shadow(0 0 30px #0000ff);
+}
+
+.hackday-logo-filter {
+  filter: drop-shadow(0 0 15px #ff000052) drop-shadow(0 0 30px #0000ff4b);
+}
+
+.building-glow-filter {
+  filter: drop-shadow(0 0 50px #ff3c00) drop-shadow(0 0 80px rgb(255, 0, 0));
+}
+
+.building-glow-mask {
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%);
+}
+
+.building-mask {
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%);
+}

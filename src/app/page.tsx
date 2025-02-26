@@ -2,100 +2,101 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <div className="scrollbar-hide bg-gradient-to-t from-neutral-900 via-blue-900 to-pink-800">
+      {/* Navbar */}
+      <nav className="position-fixed top-0 left-0 w-full z-100 bg-gradient-to-r from-purple-950 via-blue-900 to-purple-950 padding-x-[15px] text-align-center fancy-shadow md:h-16">
+        <div className="grid grid-cols-8 grid-rows-1 gap-4 px-20 h-full pr-32">
+          <div className="col-span-1 flex flex-row-reverse align-middle content-center pr-5">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/Logo.svg"
+              alt="Main Logo"
+              className="items-center justify-center content-center"
+              width={33}
+              height={37}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
+          <div className="flex align-middle justify-center items-center content-center">
+            <a href="#">Home</a>
+          </div>
+          <div className="flex align-middle justify-center items-center content-center">
+            <a href="#">Apply</a>
+          </div>
+          <div className="flex align-middle justify-center items-center content-center">
+            <a href="#">The Founder's Arena</a>
+          </div>
+          <div className="flex align-middle justify-center items-center content-center">
+            <a href="#">Schedule</a>
+          </div>
+          <div className="flex align-middle justify-center items-center content-center">
+            <a href="#">About Us</a>
+          </div>
+          <div className="flex align-middle justify-center items-center content-center">
+            <a href="#">FAQ</a>
+          </div>
+          <div className="flex align-middle justify-center items-center content-center">
+            <a href="#">Contact</a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </nav>
+      {/* Scrollable Content Wrapper */}
+      <div className="position-relative w-[100vw] min-h-[200vh] flex justify-center items-start" />
+      {/* Logo Container (Moves Together) */}
+      <div className="position-absolute w-[100vw] top-[20%] left-1/2 logo-transform z-4 flex flex-col items-center">
+        <Image
+          src="/Logo.svg"
+          alt="Main Logo"
+          className="h-auto z-4 logo-filter"
+          width={402}
+          height={439}
+        />
+        <Image
+          src="/HackDayLogo.svg"
+          alt="Hack Day Logo"
+          className="h-auto z-4 hackday-logo-filter"
+          width={418}
+          height={113}
+        />
+      </div>
+      {/* Buildings + Glow (Moves Together) */}
+      <div className="position-absolute w-[100vw] bottom-0 left-0 z-2 will-change-transform">
+        <Image
+          src="/BuildingGlow.svg"
+          alt="Building Glow"
+          className="position-absolute w-[100vw] h-auto bottom-[-500px] left-0 z-1 building-glow-filter building-glow-mask"
+          width={1438}
+          height={730}
+        />
+        <Image
+          src="/Buildings.svg"
+          alt="Buildings"
+          className="position-absolute w-[100vw] h-auto bottom-[-500px] left-0 z-2 building-mask"
+          width={1440}
+          height={761}
+        />
+      </div>
+      {/* Information Section */}
+      <div className="text-white text-center max-w-[900px] my-auto p-[40px] mt-[-150px]">
+        <section className="mx-[60px] p-[50px] info-bg border-r-[10px] info-shadow">
+          <h2>ARE YOU READY TO GO BEYOND?</h2>
+          <p>APPLY</p>
+        </section>
+        <section className="mx-[60px] p-[50px] info-bg border-r-[10px] info-shadow">
+          <h2>THE FOUNDER'S ARENA</h2>
+          <p>
+            The Founders Arena is a unique and first-of-its-kind "go-to-market"
+            Accelerator specifically for WealthTech companies looking to scale
+            across the global WealthTech market. With a team of Executive
+            Ambassadors, industry experts can guide and drive our start-ups to
+            quicker growth. Our focus is on fostering collaboration, innovation,
+            and entrepreneurship, and we are committed to creating a supportive
+            and inclusive community for all our participants.
+          </p>
+        </section>
+        <section className="mx-[60px] p-[50px] info-bg border-r-[10px] info-shadow">
+          <h2>Meet the Team</h2>
+          <p>HackUTA Team Information</p>
+        </section>
+      </div>
     </div>
   );
 }
