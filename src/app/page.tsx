@@ -50,7 +50,7 @@ export default function Home() {
               { name: "FAQ", href: "#faq" },
               { name: "Contact", href: "#contact" },
             ].map((item) => (
-              <a key={item.name} href={item.href} className="font-franklinGothic text-xl font-normal hover:text-purple-300 transition">
+              <a key={item.name} href={item.href} className="font-franklinGothic text-white text-xl font-normal hover:text-purple-300 transition">
                 {item.name}
               </a>
             ))}
