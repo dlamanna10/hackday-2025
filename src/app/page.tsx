@@ -26,7 +26,7 @@ export default function Home() {
               { name: "FAQ", href: "#faq" },
               { name: "Contact", href: "#contact" },
             ].map((item) => (
-              <a key={item.name} href={item.href} className="font-franklinGothic text-xl font-normal hover:text-purple-300 transition">
+              <a key={item.name} href={item.href} className="font-franklinGothic text-2xl font-normal hover:text-purple-300 transition">
                 {item.name}
               </a>
             ))}
@@ -37,13 +37,21 @@ export default function Home() {
               {isOpen ? <X size={32} /> : <Menu size={32} />}
           </button>
           <div
-            className={`absolute top-full left-0 w-full bg-purple-950 flex flex-col items-center space-y-4 py-4 transition-all ${
+            className={`absolute top-full left-0 w-full bg-purple-950 bg-opacity-80 backdrop-blur-md flex flex-col items-center space-y-4 py-4 transition-all ${
               isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
             }`}
           >
-            {["Home", "Apply", "The Founder's Arena", "Schedule", "About Us", "FAQ", "Contact"].map((item) => (
-              <a key={item} href="#" className="font-franklinGothic text-xl font-normal hover:text-gray-300 transition">
-                {item}
+            {[
+              { name: "Home", href: "#" },
+              { name: "Apply", href: "#apply" },
+              { name: "The Founder's Arena", href: "#founders-arena" },
+              { name: "Schedule", href: "#schedule" },
+              { name: "About Us", href: "#about" },
+              { name: "FAQ", href: "#faq" },
+              { name: "Contact", href: "#contact" },
+            ].map((item) => (
+              <a key={item.name} href={item.href} className="font-franklinGothic text-xl font-normal hover:text-gray-300 transition">
+                {item.name}
               </a>
             ))}
           </div>
