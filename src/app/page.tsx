@@ -92,7 +92,7 @@ export default function Home() {
       </div>
 
       {/* Information Section */}
-      <div className="font-franklinCondensed text-white text-center w-[100vw] mx-auto p-[40px] mt-[-150px]">
+      <div className="font-franklinCondensed text-white text-center w-[100vw] mx-auto p-[40px] mt-[-250px]">
         <section id='apply' className="scroll-mt-16 pt-10 mx-auto p-[50px]">
           <h2 className="text-5xl font-bold">ARE YOU READY TO GO BEYOND?</h2>
         </section>
@@ -105,14 +105,25 @@ export default function Home() {
             APPLY NOW
           </a>
         </section>
-        <section id='founders-arena' className="scroll-mt-16 pt-10 mx-auto p-[50px]">
-          <h2 className="text-5xl font-bold">THE FOUNDER'S ARENA</h2>
-          <p className="text-2xl mt-4 leading-relaxed">
-            The Founders Arena is a unique and first-of-its-kind "go-to-market"
-            Accelerator specifically for WealthTech companies looking to scale
-            across the global WealthTech market. With a team of Executive
-            Ambassadors, industry experts can guide and drive our start-ups to
-            quicker growth...
+        <section id="founders-arena" className="scroll-mt-16 pt-10 mx-auto p-[40px] flex flex-col items-center">
+          <h3 className="text-3xl font-normal text-center mb-10 max-w-[500px]">
+            Brought to you by...
+          </h3>
+          <Image
+            src="/FoundersArena.svg"
+            alt="FoundersArena"
+            className="mb-4"
+            width={300}
+            height={100}
+          />
+          <h2 className="text-5xl font-bold text-center max-w-[500px]">
+            THE FOUNDER'S ARENA
+          </h2>
+          <p className="text-2xl mt-4 font-normal text-center max-w-[600px]">
+            The Founders Arena is a unique and first-of-its-kind "go-to-market" Accelerator 
+            specifically for WealthTech companies looking to scale across the global WealthTech 
+            market. With a team of Executive Ambassadors, industry experts can guide and drive 
+            our start-ups to quicker growth...
           </p>
         </section>
         <section id='schedule' className="scroll-mt-16 pt-10 mx-auto p-[50px]">
