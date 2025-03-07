@@ -51,61 +51,60 @@ export default function Home() {
       </nav>
 
       {/* Scrollable Content Wrapper */}
-      <div className="position-relative w-[100vw] min-h-[200vh] flex justify-center items-start" />
-      {/* Logo Container (Moves Together) */}
+      <div className="relative w-full min-h-[130vh] md:min-h-[170vh] flex justify-center items-start"/>      {/* Logo Container (Moves Together) */}
       {/* Logos - Ensure They Appear on Top */}
-      <div className="absolute w-full top-[-10%] sm:top-[25%] md:top-[20%] lg:top-[25%] left-1/2 transform -translate-x-1/2 z-50 flex flex-col items-center">
+      <div className="absolute w-full top-[5%] sm:top-[20%] md:top-[15%] lg:top-[20%] left-1/2 transform -translate-x-1/2 z-50 flex flex-col items-center">
         <Image
           src="/Logo.svg"
           alt="Main Logo"
-          className="absolute bottom-[-400px] w-[60%] max-w-[300px] md:max-w-[400px]  h-auto z-50 logo-filter"
+          className="absolute bottom-[-400px] sm:bottom-[-400px] md:bottom-[-450px] w-[50%] sm:w-[60%] max-w-[250px] sm:max-w-[300px] md:max-w-[400px] h-auto z-50 logo-filter"
           width={402}
           height={439}
         />
         <Image
           src="/HackDayLogo.svg"
           alt="Hack Day Logo"
-          className="absolute bottom-[-460px] md:bottom-[-520px] w-[60%] max-w-[300px] md:max-w-[400px] h-auto z-50 hackday-logo-filter"
+          className="absolute bottom-[-460px] sm:bottom-[-460px] md:bottom-[-560px] w-[50%] sm:w-[60%] max-w-[250px] sm:max-w-[300px] md:max-w-[400px] h-auto z-50 hackday-logo-filter"
           width={418}
           height={113}
         />
       </div>
 
       {/* Buildings + Glow (Moves Together) */}
-      <div className="absolute w-full bottom-0 left-0 flex justify-center items-end">
-        <div className="relative w-full h-auto">
+      <div className="absolute w-full top-[70%] sm:top-[75%] md:top-[50%] left-0 flex justify-center items-end">
+        <div className="relative w-full">
           <Image
             src="/BuildingGlow.svg"
             alt="Building Glow"
-            className="absolute bottom-[-480px] sm:bottom-[-300px] md:bottom-[-480px] w-full h-auto z-10 building-glow-mask"
+            className="absolute top-[40px] sm:top-[60px] md:top-[40px] w-full h-auto z-10 building-glow-mask"
             width={1438}
             height={730}
           />
           <Image
             src="/Buildings.svg"
             alt="Buildings"
-            className="absolute bottom-[-480px] sm:bottom-[-300px] md:bottom-[-480px] w-full h-auto z-20 building-mask"
+            className="absolute top-0 w-full h-auto z-20 building-mask"
             width={1440}
             height={761}
           />
         </div>
       </div>
 
+
       {/* Information Section */}
-      <div className="font-franklinCondensed text-white text-center w-[100vw] mx-auto p-[40px] mt-[-250px]">
-        <section id='apply' className="scroll-mt-16 pt-10 mx-auto p-[50px]">
+      <div className="font-franklinCondensed text-white text-center w-[100vw] mx-auto px-6 sm:px-10 p-[40px] mt-[-150px]">        <section id='apply' className="scroll-mt-16 pt-10 mx-auto p-[40px] sm:p-[50px] flex flex-col items-center p-[50px]">
           <h2 className="text-5xl font-bold">ARE YOU READY TO GO BEYOND?</h2>
         </section>
-        <section id='apply' className="mt-[-80px] mx-auto p-[70px]">
+        <section id='apply' className="w-full flex justify-center">
         <a href='https://docs.google.com/forms/d/e/1FAIpQLScBIrfcTsXM32cx4RX1HQItdzIkzVIVj57EL1k5caWSw_btdA/viewform?usp=sharing'
           target='_blank'
           rel='noopener noreferrer'
           className='relative px-8 py-3 text-2xl font-semibold text-white rounded-full transition duration-300
-          bg-gradient-to-r from-purple-600 to-red-500 hover:from-purple-600 hover:to-blue-600 shadow-lg hover:shadow-xl' >
+          bg-gradient-to-r from-purple-600 to-red-500 hover:from-purple-600 hover:to-blue-600 shadow-lg hover:shadow-xl w-[90%] max-w-[300px] text-center'>
             APPLY NOW
           </a>
         </section>
-        <section id="founders-arena" className="scroll-mt-16 pt-10 mx-auto p-[40px] flex flex-col items-center">
+        <section id="founders-arena" className="scroll-mt-16 pt-40 mx-auto p-[40px] flex flex-col items-center">
           <h3 className="text-3xl font-normal text-center mb-10 max-w-[500px]">
             Brought to you by...
           </h3>
